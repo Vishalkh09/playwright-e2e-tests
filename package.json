@@ -2,11 +2,15 @@
   "name": "playwright-e2e-tests",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "login": "npx playwright test tests/functional/login.spec.ts --headed",
+    "demo:firefox": "npx playwright test tests/demo/myTest.spec.ts --project=firefox",
+    "demo": "npx playwright test tests/demo/myTest.spec.ts --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Playwright E2E Tests with AI Capabilities incl MCP",
   "devDependencies": {
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.6.4"
